@@ -485,6 +485,9 @@ table {
 	text-transform: uppercase;
 	//background-color: $color-1;
 	font-family: $font-family-1;
+	button{
+		width: 100%;
+	}
 	a, button, .btn-this{
 		line-height: normal;
 		display: block;
@@ -593,7 +596,7 @@ table {
 			font-weight: 500;
 			width: 30px;
 			height: 30px;
-			background-color: $color-gray-3;
+			background-color: $color-2;
 			&:hover{
 				a{
 					color: $color-1;
@@ -751,15 +754,14 @@ h1,h2,h3{
 }
 h1, h2, h3, h4{
 	margin-top: 10px;
+	font-weight: 400;
 	margin-bottom: 10px;
 	line-height: 150%;
 	font-family: $font-family-2;
 }
 h1{
-	position: relative;
-	font-weight: 700;	
-	font-size: em(30, 16);
-	text-transform: uppercase;
+	position: relative;	
+	font-size: em(40, 16);
 	margin-bottom: 15px;
 	line-height: 125%;
 }
@@ -842,7 +844,7 @@ main{
 	background-color: white;
 	color: black;
 	p{
-		line-height: 170%;
+		line-height: 120%;
 		font-size: 0.98em;
 	}
 	.parag-gray{
@@ -860,8 +862,8 @@ hr{
 .main-content{
 	//z-index: 1;
 	position: relative;
-	min-height: 300px;
-	color: $color-2;
+	background-image: url('../img/other/texture-1.jpg');
+	min-height: 300px;	
 	@media (max-width: 991px){
 		text-align: center ;
 	}
@@ -876,6 +878,9 @@ hr{
 	}
 	*:not(figure):not(div){
 		letter-spacing: 0.5px;
+	}
+	.line-height-def{
+		line-height: 100%;
 	}
 }
 .breadcrumb-container{
@@ -896,6 +901,15 @@ a[target="_blank"]{
 .hover-underline{
 	a:hover{
 		text-decoration: underline;
+	}
+}
+.hover-img{
+	img{
+		transition: filter 0.3s ease;
+		filter: brightness(95%);
+		&:hover{
+			filter: brightness(105%);
+		}
 	}
 }
 [underline]{
@@ -1025,10 +1039,12 @@ a[target="_blank"]{
 }
 
 .pie-form-control{
-	border: 1px solid $color-1;
+	border: 1px solid transparent;
+	border-bottom-color: white;
 	background-color: transparent;
 	padding: 7px 7px;
-	@include placeholder-color( rgba(black, 0.4) );
+	color: inherit;
+	@include placeholder-color( white );
 	text-transform: uppercase;
 }
 input.pie-form-control{

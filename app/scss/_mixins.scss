@@ -31,10 +31,20 @@
 }
 
 @mixin placeholder-color( $color ) {
-	&::-moz-placeholder { color: $color;opacity: 1; }
-	&:-ms-input-placeholder { color:$color; }
-	&::-webkit-input-placeholder { color: $color; }
-	&::-ms-expand { border: 0;background-color: transparent; }
+	&::-moz-placeholder { 
+		color: $color;
+		opacity: 1; 
+	}
+	&:-ms-input-placeholder { 
+		color:$color; 
+	}
+	&::-webkit-input-placeholder { 
+		color: $color; 
+	}
+	&::-ms-expand { 
+		border: 0;
+		background-color: transparent; 
+	}
 }
 
 

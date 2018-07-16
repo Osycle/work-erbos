@@ -68,14 +68,17 @@ html{
 	margin-left: auto;
 	margin-right: auto;
 }
-
-.m-auto-sm{	
-	margin-left: auto;
-	margin-right: auto;
+@media (max-width:991px){
+	.m-auto-sm{	
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
-.m-auto-md{	
-	margin-left: auto;
-	margin-right: auto;
+@media (min-width:992px){
+	.m-auto-md{	
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 
@@ -629,11 +632,14 @@ html{
 	vertical-align: middle;
 	text-align: center;
 }
-.vam{
+.va-middle{
 	vertical-align: middle;
 }
-.vab{
+.va-baseline{
 	vertical-align: baseline;
+}
+.va-bottom{
+	vertical-align: bottom;
 }
 
 .over-hidden{

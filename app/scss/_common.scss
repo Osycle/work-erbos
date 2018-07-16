@@ -17,7 +17,7 @@ $font-family-3: "Days";
 $color-scroll: $color-1;
 $color-footer: #0071BC;
 
-$color-gray_1: #eeeeee;
+$color-gray_1: #757575;
 $color-gray_2: #bdbdbd;
 $color-gray_3: rgba($color-gray-1, 0.3);
 
@@ -386,7 +386,10 @@ table {
 	//text-align: center;
 	&:not(.boxes-nosub)>.boxes-cell, &>figure{
 		display: inline-table;
-		vertical-align: top;
+		&:not([class|='va']){
+			vertical-align: top;
+		}
+			
 		@include img-auto-adaptive();
 		img:not([width]){
 			width: 100%;
@@ -767,7 +770,7 @@ h1{
 }
 h2{
 	position: relative;
-	//font-weight: 600;
+	font-weight: 600;
 	font-size: em(27, 16);
 	line-height: 125%;
 	margin-bottom: 15px;
@@ -847,11 +850,7 @@ main{
 		line-height: 120%;
 		font-size: 0.98em;
 	}
-	.parag-gray{
-		p{
-			color: $color-gray-1;
-		}
-	}
+	@extend .list-style-1;
 }
 hr{
 	border-color: rgba(165, 165, 165, 0.62);

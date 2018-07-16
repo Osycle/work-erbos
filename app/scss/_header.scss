@@ -246,19 +246,22 @@ ul[class*="sub"]{
 	//height: 520px;
 	left: -200px;
 	position: absolute;
-	background-color: $color-gray-1;
+	background-color: #eee;
 	letter-spacing: -6px !important;
 	*{
 		letter-spacing: 0;
 	}
+	.img-content{
+		padding-top: 2px;
+	}
 	.img{
 		background-position: center;
 		background-size: contain;
-		height: 215px;
+		height: 216px;
 	}
 	figure{
-		transition: all 0.5s ease 0.25s;
-		border: 2px solid transparent;
+		transition: transform 0.5s ease 0.25s;
+		border: 1px solid transparent;
 		transform: scale(0);
 		position: relative;
 		.desc-content{
@@ -304,9 +307,50 @@ ul[class*="sub"]{
 	//background-color: $color-1;
 	background-size: 600px;
 	background-position: right;
-	//z-index: 1;
-	//color: white;
 }
+.min-productions-sub-menu{
+	transition: all 0.8s ease 0.1s;
+	opacity: 1;
+	text-align: center;
+	padding: 15px;
+	width: 100%;
+	transform-origin: 50% 0;
+	//height: 520px;
+	background-color: #eee;
+	letter-spacing: -6px !important;
+	*{
+		letter-spacing: 0;
+	}
+	.img-content{
+		padding-top: 2px;
+	}
+	.img{
+		background-position: center;
+		background-size: contain;
+		height: 130px;
+	}
+	figure{
+		position: relative;
+		width: 50%;
+		float: left;
+		.desc-content{
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: 0;
+			z-index: 1; 
+			padding: 15px 5px;
+		}
+		&:hover{
+			border-color: $color-1;
+			.desc-content{
+				background-color: $color-1;
+				color: white;
+			}
+		}
+	}
+}
+
 
 @keyframes bgScroll {
   to {
@@ -362,6 +406,7 @@ ul[class*="sub"]{
 		height: 0;
 		transition: height 0.3s ease-in-out 0.0s;
 	}
+
 }
 
 

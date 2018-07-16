@@ -7053,6 +7053,7 @@ ul[class*="sub"] {
   -o-transition: all 0.8s ease 0.1s;
   transition: all 0.8s ease 0.1s;
   opacity: 1;
+  top: 101px;
   padding: 15px;
   width: 800px;
   -webkit-transform-origin: 50% 0;
@@ -7650,6 +7651,37 @@ textarea.form-control {
 
 .footer-form input, .footer-form textarea {
   width: 100%; }
+
+.footer-socicons figure {
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .footer-socicons figure:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%); }
+
+.footer-socicons .icon-content {
+  padding: 7px 30px;
+  white-space: nowrap;
+  font-size: 20px; }
+  .footer-socicons .icon-content .fa ~ span {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-weight: 500; }
+  .footer-socicons .icon-content .fa {
+    vertical-align: middle; }
+
+.footer-socicons .icon-content.instagram {
+  background-color: #c62828; }
+
+.footer-socicons .icon-content.vk {
+  background-color: #1c6faf; }
+
+.footer-socicons .icon-content.telegram {
+  background-color: #00ade1;
+  font-size: 20px; }
 
 /* 
 		_other.scss

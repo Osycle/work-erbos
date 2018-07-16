@@ -26,3 +26,39 @@
 		width:100%;
 	}
 }
+.footer-socicons{
+	figure{
+		text-align: center;
+		transition: all 0.3s ease;
+		&:hover{
+			filter: brightness(110%);
+		}
+	}
+	.icon-content{
+		padding: 7px 30px;
+		white-space: nowrap;
+		font-size: 20px;
+		.fa ~ span{
+			font-size: 14px;
+			vertical-align: middle;
+			padding-left: 10px;
+			font-weight: 500;
+		}
+		.fa{
+			vertical-align: middle;
+		}
+	}
+	.icon-content.instagram{
+		background-color: #c62828;
+	}
+	.icon-content.vk{
+		background-color: #1c6faf;
+	}
+	.icon-content.telegram{
+		background-color: #00ade1;
+		font-size: 20px;
+	}
+
+
+
+}

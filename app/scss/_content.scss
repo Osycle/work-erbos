@@ -213,6 +213,7 @@
 		.img{
 			transition: all 0.7s ease;
 			height: 360px;
+			background-position: center 30%;
 		}
 		.desc-content{
 			@extend .desc-def;
@@ -249,15 +250,25 @@
 		padding: 15px;
 		height: 100%;
 	}
-	.desc-content, .img-content{
-		height: 470px;
+	.carousel-main{
+		background-color: white;
+		.img-content{
+			padding: 0 30px;
+			.img{
+				height: 470px;
+			}
+		}
 	}
-	.desc-content{
-		overflow: hidden;
-	}
-	.img{
-		height: 470px;
-	}
+	// .desc-content, .img-content{
+	// 	height: 470px;
+	// }
+	// .desc-content{
+	// 	overflow: hidden;
+	// }
+	// .img{
+	// 	height: 470px;
+	// }
+
 }
 .entry-content{
 	color: #424242;

@@ -230,7 +230,7 @@
 							//friction: 1,
 							//selectedAttraction: 1,
 							initialIndex: 1,
-							draggable: true,
+							draggable: !checkSm(),
 							contain: true,
 							pageDots: false
 						});
@@ -240,7 +240,7 @@
 						imagesLoaded: true,
 						initialIndex: 1,
 						asNavFor: $(carouselMain)[i],
-						prevNextButtons: true,
+						prevNextButtons: false,
 						draggable: true,
 						percentPosition: true,
 						//wrapAround: true,

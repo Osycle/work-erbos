@@ -96,6 +96,12 @@
 	}
 	@media(max-width: 991px) {
 		font-size: 0.9em;
+		figure{
+			height: calc(100vh - 70px);
+		}
+		.img{
+			background-position: center;
+		}
 		.carousel-prev-next{
 			width: 100%;
 		}

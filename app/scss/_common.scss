@@ -851,6 +851,14 @@ main{
 		font-size: 0.98em;
 	}
 	@extend .list-style-1;
+	@media (max-width: 991px) {
+		h1, h2{
+			word-wrap: break-word;
+		}
+		h1{
+			font-size: 2em;
+		}
+	}
 }
 hr{
 	border-color: rgba(165, 165, 165, 0.62);
@@ -880,6 +888,23 @@ hr{
 	}
 	.line-height-def{
 		line-height: 100%;
+	}
+	@media (max-width: 991px) {
+		h1{
+			font-size: 1.5em;
+		}
+		h2{
+			font-size: 1.1em;
+		}
+		h3{
+			font-size: 1.05em;
+		}
+		h4{
+			font-size: 0.9em;
+		}
+
+
+
 	}
 }
 .breadcrumb-container{

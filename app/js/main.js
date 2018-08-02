@@ -223,6 +223,7 @@
 					var crs = $(carouselMain)
 						.eq(i)
 						.flickity({
+							autoPlay: 3000,
 							imagesLoaded: true,
 							prevNextButtons: false,
 							cellAlign: "center",
@@ -230,7 +231,7 @@
 							//friction: 1,
 							//selectedAttraction: 1,
 							initialIndex: 1,
-							draggable: !checkSm(),
+							draggable: false,
 							contain: true,
 							pageDots: false
 						});

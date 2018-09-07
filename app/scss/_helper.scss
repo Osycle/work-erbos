@@ -676,6 +676,22 @@ html{
 }
 
 
+.z-index-1{
+	z-index: 1;
+}
+.z-index-2{
+	z-index: 2;
+}
+.z-index-3{
+	z-index: 3;
+}
+
+@for $i from 0 through 10{
+	.opacity-#{$i}{
+		opacity: $i/10;
+	}
+}
+
 
 img[align="right"], img[align="left"], figure[align="right"], figure[align="left"]{
 	&:first-child{

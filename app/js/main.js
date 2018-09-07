@@ -225,7 +225,7 @@
 						.flickity({
 							autoPlay: 3000,
 							imagesLoaded: true,
-							prevNextButtons: false,
+							prevNextButtons: checkSm(),
 							cellAlign: "center",
 							bgLazyLoad: 1,
 							//friction: 1,

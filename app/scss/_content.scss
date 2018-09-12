@@ -171,12 +171,12 @@
 				border-color: $color-2;
 				box-shadow: 0 0 20px -7px black;
 			}
-			.img{
-				height: 100%;
-			}
 			.desc-content{
 				color: white;
 				background-color: $color-2;
+			}
+			.img{
+				height: 100%;
 			}
 		}
 
@@ -226,6 +226,7 @@
 		background-color: #cdcdcd;
 		overflow: hidden;
 		border: 1px solid $color-1;
+		transition: all 0.6s ease !important;
 		.img{
 			transition: all 0.7s ease;
 			height: 250px;
@@ -250,8 +251,11 @@
 			.img{
 				transform: scale(1.05);
 			}
+			border-color: $color-2;
+			box-shadow: 0 0 20px -7px black;
 			.desc-content{
-
+				color: white;
+				background-color: $color-2;
 			}
 		}
 	}

@@ -7528,11 +7528,11 @@ textarea.form-control {
     border-color: #b3001b;
     -webkit-box-shadow: 0 0 20px -7px black;
     box-shadow: 0 0 20px -7px black; }
-  .short-productions-items figure:hover .img {
-    height: 100%; }
   .short-productions-items figure:hover .desc-content {
     color: white;
     background-color: #b3001b; }
+  .short-productions-items figure:hover .img {
+    height: 100%; }
 
 @media (max-width: 991px) {
   .short-productions-items figure {
@@ -7548,7 +7548,10 @@ textarea.form-control {
   position: relative;
   background-color: #cdcdcd;
   overflow: hidden;
-  border: 1px solid #eec643; }
+  border: 1px solid #eec643;
+  -webkit-transition: all 0.6s ease !important;
+  -o-transition: all 0.6s ease !important;
+  transition: all 0.6s ease !important; }
   .production-items figure .img {
     -webkit-transition: all 0.7s ease;
     -o-transition: all 0.7s ease;
@@ -7574,10 +7577,17 @@ textarea.form-control {
     align-items: center; }
     .production-items figure .desc-content p {
       width: 100%; }
-  .production-items figure:hover .img {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05); }
+  .production-items figure:hover {
+    border-color: #b3001b;
+    -webkit-box-shadow: 0 0 20px -7px black;
+    box-shadow: 0 0 20px -7px black; }
+    .production-items figure:hover .img {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
+    .production-items figure:hover .desc-content {
+      color: white;
+      background-color: #b3001b; }
 
 /* contacts */
 .contacts .row {
@@ -7726,6 +7736,8 @@ textarea.form-control {
   .footer-socicons .icon-content.telegram {
     background-color: #00ade1;
     font-size: 20px; }
+  .footer-socicons .icon-content.facebook {
+    background-color: #4267b2; }
 
 /* 
 		_other.scss
